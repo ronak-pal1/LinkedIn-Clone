@@ -10,16 +10,16 @@ import { BusinessCenter, ChatRounded, Notifications } from "@material-ui/icons";
 const Header = () => {
     return (
         <div className="header">
-            <div class="header__left">
+            <div className="header__left">
                 <img src={ linkedInIcon } alt="linkedin icon" />
                 
-                <div class="header__search">
+                <div className="header__search">
                     <SearchIcon />
                     <input type="text" placeholder="Search"></input>
                 </div>
             </div>
 
-            <div class="header__right">
+            <div className="header__right">
                 <HeaderOption Icon= { HomeIcon } title='Home' />
                 <HeaderOption Icon= { SupervisorAccountIcon } title='My Network' />
                 <HeaderOption Icon= { BusinessCenter } title='Jobs' />

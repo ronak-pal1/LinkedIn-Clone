@@ -12,8 +12,8 @@ const Sidebar = () => {
         </div>
     );
     return (
-        <div class="sidebar">
-            <div class="sidebar__top">
+        <div className="sidebar">
+            <div className="sidebar__top">
                 <img src={ sidebarBanner } alt="Banner" />
                 <Avatar className="sidebar__avatar" />
                 <h2>Ronak paul</h2>
