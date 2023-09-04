@@ -2,8 +2,12 @@ import React from "react";
 import "./Sidebar.css";
 import { Avatar } from "@material-ui/core";
 import sidebarBanner from "./assets/DevOps banner.png";
+import { useSelector } from "react-redux";
+import { selectUser } from "./features/userSlice";
 
 const Sidebar = () => {
+
+    const user = useSelector(selectUser);
 
     const recentItem = (topic) => (
         <div className="sidebar__recentItem">
@@ -11,13 +15,14 @@ const Sidebar = () => {
             <p>{topic}</p>
         </div>
     );
+
     return (
         <div className="sidebar">
             <div className="sidebar__top">
                 <img src={ sidebarBanner } alt="Banner" />
-                <Avatar className="sidebar__avatar" />
-                <h2>Ronak paul</h2>
-                <h4>ronakpaulfaf@gmail.com</h4>
+                <Avatar src={user.photoURL} className="sidebar__avatar" > {user.email[0]} </Avatar>
+                <h2>{user.displayName}</h2>
+                <h4>{user.email}</h4>
             </div>
 
             <div className="sidebar__stats">
@@ -28,7 +33,7 @@ const Sidebar = () => {
 
                 <div className="sidebar__stat">
                     <p>Views on post</p>
-                    <p className="sidebar__statNumber">2,500</p>
+                    <p className="sidebar__statNumber">2,473</p>
                 </div>
             </div>
 
