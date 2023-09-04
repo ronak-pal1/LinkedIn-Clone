@@ -4,11 +4,11 @@ import { Avatar } from "@material-ui/core";
 import InputOption from "./InputOption";
 import { ChatOutlined, SendOutlined, ShareOutlined, ThumbUpAltOutlined } from "@material-ui/icons";
 
-const Post = ({name, description, message, photoUrl}) => {
+const Post = ({name, description, message, photoUrl, firstChar}) => {
     return (
         <div className="post">
             <div className="post__header">
-                <Avatar />
+                <Avatar src={photoUrl}>{name[0]}</Avatar>
                 <div className="post__info">
                     <h2>{name}</h2>
                     <p>{description}</p>
@@ -21,9 +21,9 @@ const Post = ({name, description, message, photoUrl}) => {
 
             <div className="post__buttons">
                 <InputOption Icon={ThumbUpAltOutlined} title="Like" color="grey"/>
-                <InputOption Icon={ChatOutlined} title="Like" color="grey"/>
-                <InputOption Icon={ShareOutlined} title="Like" color="grey"/>
-                <InputOption Icon={SendOutlined} title="Like" color="grey"/>
+                <InputOption Icon={ChatOutlined} title="Comment" color="grey"/>
+                <InputOption Icon={ShareOutlined} title="Share" color="grey"/>
+                <InputOption Icon={SendOutlined} title="Repost" color="grey"/>
             </div>
         </div>
     );
