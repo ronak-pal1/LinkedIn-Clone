@@ -1,6 +1,6 @@
 # <div align="center"> LinkedIn Clone </div>
 
-<div align="center"> ![LinkedIn Logo](https://github.com/ronak-pal1/LinkedIn-Clone/blob/main/src/assets/icons8-linkedin-240.png) </div>
+<div align="center"> <img src="https://github.com/ronak-pal1/LinkedIn-Clone/blob/main/src/assets/icons8-linkedin-240.png"/> </div>
 
 ## Things are I used to build this Clone 👇
 
